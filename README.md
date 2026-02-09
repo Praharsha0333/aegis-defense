@@ -1,18 +1,18 @@
-# 🛡️ Aegis: Intelligent Agentic Browser Defense System
+#  Aegis: Intelligent Agentic Browser Defense System
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
 ![AI](https://img.shields.io/badge/AI-Hybrid%20Architecture-orange)
 ![Security](https://img.shields.io/badge/Security-Active%20Defense-red)
 ![Status](https://img.shields.io/badge/Status-Prototype-green)
 
-## 🏆 Project Overview
+##  Project Overview
 **Aegis** is a specialized security layer designed to protect **AI Agents** (LLMs) from adversarial web attacks. Unlike traditional antivirus software that protects humans, Aegis sits between the browser and the AI agent, filtering out prompt injections, hidden instructions, and deceptive UI elements that aim to hijack the agent's decision-making process.
 
 **Key Innovation:** We implemented a **Hybrid AI Architecture** that combines a low-latency Random Forest classifier (Tier 1) with a local Semantic Transformer (Tier 2) to provide real-time, zero-dependency threat reasoning without external API calls.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 ### 1. Hybrid AI Threat Detection (0.0.3 LLM Reasoning)
 * **Tier 1 (Reflex):** A **Random Forest Classifier** scans DOM elements in **<2ms** for known malicious keywords and patterns.
@@ -33,7 +33,7 @@
 
 ---
 
-## 🛠️ System Architecture
+##  System Architecture
 
 
 
@@ -46,7 +46,7 @@
 
 ---
 
-## ⚡ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 * Python 3.10+ (Recommended: Python 3.11 for stability)
