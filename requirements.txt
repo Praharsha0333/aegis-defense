@@ -1,0 +1,5 @@
+playwright
+scikit-learn
+numpy
+joblib
+colorama
