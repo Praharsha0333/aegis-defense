@@ -52,6 +52,16 @@
 * Python 3.10+ (Recommended: Python 3.11 for stability)
 * Mac / Linux / Windows
 
+How to run client side # T4skforce Threat Intel Console
+
+1. Ensure `index.html`, `style.css`, and `attacks.js` are in the same folder.
+2. Open a terminal in this folder and run: `python -m http.server`
+3. Open your browser and navigate to: `http://localhost:8000`
+4. The Threat Emulation and Attack Vectors will execute automatically upon loading.
+
+How to run Aegis:
+
+
 ### 1. Clone & Set Up Environment
 ```bash
 # Clone the repository
@@ -61,3 +71,15 @@ cd aegis-defense
 # Create a virtual environment (Recommended)
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+2. Install Browser Binaries
+
+Bash
+playwright install
+
+3. Run the System
+
+Bash
+python3 main.py
+
+
