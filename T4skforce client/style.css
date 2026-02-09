@@ -1,0 +1,47 @@
+/* =========================================
+   T4SKFORCE ENTERPRISE THEME
+   Version: 3.0 (Flat Structure Fix)
+   ========================================= */
+
+/* BACKGROUND */
+body {
+    background-color: #020617;
+    background-image: 
+        linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* GLASS PANELS */
+.glass-panel {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+.glass-panel:hover {
+    box-shadow: 0 0 60px rgba(0, 240, 255, 0.15);
+    border-color: rgba(0, 240, 255, 0.3);
+}
+
+/* ATTACK VECTORS (HIDDEN) */
+.ghost-text { opacity: 0.001; position: absolute; z-index: -999; pointer-events: none; }
+.trap-overlay { position: absolute; inset: 0; opacity: 0; z-index: 50; cursor: pointer; }
+
+/* ANIMATIONS */
+.typing::after { content: '▋'; animation: blink 1s infinite; color: #00f0ff; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+.glow-text { text-shadow: 0 0 10px rgba(0, 240, 255, 0.5); }
+.danger-glow { text-shadow: 0 0 10px rgba(255, 0, 60, 0.5); }
+
+/* FADE IN for Button */
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+.animate-fade-in { 
+    animation: fadeIn 0.5s ease-out forwards; 
+}
